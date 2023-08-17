@@ -26,7 +26,7 @@ document.body.onclick = function(e){
 }    
 async function fetchData()
 {
-    const data=await fetch('http://api.quotable.io/random').then(res=>res.json());
+    const data=await fetch('https://cors-anywhere.herokuapp.com/http://api.quotable.io/random').then(res=>res.json());
     console.log(data);
 
     data.content.split('').forEach((char)=>
